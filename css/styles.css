@@ -109,7 +109,7 @@ body {
 }
 
 .responsive-image {
-    max-width: 760px;
+    max-width: 912px;
     width: 100%;
     height: auto;
     display: block;
@@ -149,7 +149,7 @@ body {
     }
     
     .responsive-image {
-        max-width: 620px;
+        max-width: 744px;
     }
 }
 
