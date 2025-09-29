@@ -60,7 +60,7 @@ body {
 .success-icon {
     width: 70px;
     height: 70px;
-    margin-right: 40px;
+    margin-right: 12px;
     flex-shrink: 0;
 }
 
@@ -82,7 +82,7 @@ body {
 
 /* Instructions Section */
 .instructions-section {
-    padding-bottom: 30px;
+    padding-bottom: 0;
 }
 
 .instruction-text {
@@ -108,6 +108,11 @@ body {
     margin-bottom: 50px;
 }
 
+/* Ensure equal space before final heading */
+.instruction-image:last-of-type {
+    margin-bottom: 72px;
+}
+
 .responsive-image {
     max-width: 912px;
     width: 100%;
@@ -115,21 +120,21 @@ body {
     display: block;
     margin: 0 auto;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 4px 0 8px rgba(0, 0, 0, 0.3), -4px 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18), 4px 0 8px rgba(0, 0, 0, 0.18), -4px 0 8px rgba(0, 0, 0, 0.18);
 }
 
 /* Final Section */
 .final-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 0;
+    padding-bottom: 72px;
     text-align: center;
 }
 
 .final-text h2 {
     color: #3a3a3a;
-    font-size: 46px;
+    font-size: 42px;
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.35;
 }
 
@@ -172,7 +177,7 @@ body {
     .success-icon {
         width: 65px;
         height: 65px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     
     .success-text h1 {
@@ -188,13 +193,17 @@ body {
         margin-bottom: 35px;
     }
     
+    .instruction-image:last-of-type {
+        margin-bottom: 54px;
+    }
+    
     .final-section {
-        padding-top: 45px;
-        padding-bottom: 45px;
+        padding-top: 0;
+        padding-bottom: 54px;
     }
     
     .final-text h2 {
-        font-size: 38px;
+        font-size: 36px;
     }
 }
 
@@ -214,7 +223,7 @@ body {
     }
     
     .final-text h2 {
-        font-size: 38px;
+        font-size: 36px;
     }
 }
 
@@ -237,12 +246,12 @@ body {
     }
     
     .instruction-image:last-of-type {
-        margin-bottom: 15px;
+        margin-bottom: 72px;
     }
     
     .final-section {
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 0;
+        padding-bottom: 72px;
     }
     
     .success-item {
@@ -271,6 +280,6 @@ body {
     }
     
     .final-text h2 {
-        font-size: 38px;
+        font-size: 36px;
     }
 }
