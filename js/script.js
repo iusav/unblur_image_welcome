@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
             function spawnBurst(x, y, count) {
                 for (var i = 0; i < count; i++) {
                     var angle = Math.random() * Math.PI * 2;
-                    var speed = rand(2.2, 6.2);
-                    var life = rand(38, 64);
+                    var speed = rand(2.8, 7.5);
+                    var life = rand(70, 110);
                     particles.push({
                         x: x,
                         y: y,
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         vy: Math.sin(angle) * speed,
                         life: life,
                         maxLife: life,
-                        size: rand(1.5, 3.5),
+                        size: rand(2.5, 5.0),
                         color: colors[(Math.random() * colors.length) | 0]
                     });
                 }
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 { x: w0 * 0.75, y: h0 * 0.5, delay: 240 }
             ];
             burstPoints.forEach(function(p) {
-                setTimeout(function() { spawnBurst(p.x, p.y, 46); }, p.delay);
+                setTimeout(function() { spawnBurst(p.x, p.y, 72); }, p.delay);
             });
 
             var start = performance.now();
@@ -165,6 +165,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Kick off shortly after initial paint so it doesn't block content fade-in
     window.addEventListener('DOMContentLoaded', function() {
-        setTimeout(function() { launchFireworks(1200); }, 150);
+        setTimeout(function() { launchFireworks(2600); }, 150);
     });
 })();
