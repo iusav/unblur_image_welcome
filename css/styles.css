@@ -302,10 +302,10 @@ body {
 }
 
 .goodbye-title {
-    color: #3a3a3a;
+    color: #535353;
     font-weight: 400;
-    font-size: 36px;
-    margin: 0;
+    font-size: 28px;
+    margin: 0 0 60px;
 }
 
 @media screen and (max-width: 480px) {
