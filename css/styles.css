@@ -283,3 +283,33 @@ body {
         font-size: 36px;
     }
 }
+
+/* Goodbye Page */
+.goodbye-main {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 60px 20px 0;
+}
+
+.goodbye-section {
+    width: 100%;
+}
+
+.goodbye-container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.goodbye-title {
+    color: #3a3a3a;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .goodbye-main {
+        padding: 60px 20px 0;
+    }
+}
