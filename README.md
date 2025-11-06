@@ -1,44 +1,29 @@
-# Unblur Image - Welcome Page
-
-Это очищенная Welcome Page для Chrome расширения Unblur Image, созданная на основе экспорта из Tilda.
+# Unblur Image
 
 ## Структура файлов
 
 ```
-Unblur_Image/
-├── index.html          # Главная страница
+unblur_image_welcome/
+├── index.html              # Главная страница (редирект)
 ├── css/
-│   └── styles.css      # Стили без Tilda зависимостей
-├── js/
-│   └── script.js       # Минимальный JavaScript
+│   └── styles.css          # Общие стили
 ├── images/
-│   ├── check-icon.svg              # Иконка галочки
-│   ├── browser-extension-step.png  # Скриншот шагов 1-2
-│   ├── extension-icon-step.png     # Скриншот шага 3
-│   ├── favicon.svg                 # SVG favicon
-│   ├── favicon-32x32.png          # PNG favicon 32x32
-│   └── favicon-180x180.png        # Apple touch icon
-└── README.md           # Этот файл
+│   ├── browser-extension-step.png    # Скриншот шагов 1-2
+│   ├── extension-icon-step.png       # Скриншот шага 3
+│   ├── favicon_browser-48x48.svg     # SVG favicon для браузера
+│   ├── favicon.svg                   # SVG favicon
+│   ├── favicon-32x32.png             # PNG favicon 32x32
+│   └── favicon-180x180.png           # Apple touch icon
+├── welcome/
+│   ├── index.html          # Welcome страница
+│   └── js/
+│       └── script.js       # JavaScript для welcome страницы
+├── goodbye/
+│   └── index.html          # Goodbye страница (при удалении расширения)
+├── archive/
+│   └── V1/                 # Архив первой версии
+└── README.md               # Этот файл
 ```
-
-## Что было удалено
-
-- Все Tilda специфичные атрибуты и классы
-- Tilda JavaScript библиотеки
-- Ненужные tracking скрипты (Yandex.Metrika)
-- Tilda CDN зависимости
-- Лишние изображения и файлы
-- Footer с информацией о 2text
-
-## Особенности
-
-- ✅ Полностью адаптивный дизайн
-- ✅ Работает без внешних зависимостей
-- ✅ Минимальный и чистый код
-- ✅ Быстрая загрузка
-- ✅ Поддержка всех размеров экранов
-- ✅ Современный CSS без вендорных префиксов
-- ✅ Accessibility friendly
 
 ## Использование
 
