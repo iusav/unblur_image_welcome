@@ -7,7 +7,7 @@ unblur_image_welcome/
 ├── index.html              # Главная страница (редирект)
 ├── css/
 │   └── styles.css          # Общие стили
-├── images/
+├── assets/
 │   ├── browser-extension-step.png    # Скриншот шагов 1-2
 │   ├── extension-icon-step.png       # Скриншот шага 3
 │   ├── favicon_browser-48x48.svg     # SVG favicon для браузера
