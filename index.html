@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=welcome/" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unblur Image & Increase Resolution in Seconds</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon_Favicon_32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
 
 
     <!-- Yandex.Metrika counter -->
@@ -19,15 +25,256 @@
     <noscript><div><img src="https://mc.yandex.ru/watch/104146031" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
+</head>
+<body>
 
-    <script>
-      // Redirect in case meta refresh doesn't work
-      window.location.href = "welcome/";
-    </script>
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>Redirecting... If you are not redirected automatically, <a href="welcome/">click here</a>.</p>
-  </body>
+  <!-- ───────────── NAVBAR ───────────── -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">Unblur Image</a>
+      <nav class="navbar__links">
+        <a href="#how">How It Works</a>
+        <a href="#features">Features</a>
+        <a href="https://chromewebstore.google.com/detail/unblur-image/lkebmhimhedohmgkomlnhgbcknocmpjo" class="navbar__icon" aria-label="Chrome Web Store" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icon_chrome-web-store.png" alt="" width="28" height="28" />
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ───────────── HERO ───────────── -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          <span class="hero__title--accent">Unblur Image &amp;</span><br>
+          <span class="hero__title--accent">Increase Resolution</span><br>
+          <span class="hero__title--plain">in Seconds</span>
+        </h1>
+        <p class="hero__sub">
+          Restore photo details, enhance clarity, and upscale images up to 4× with AI — directly in your browser
+        </p>
+        <a href="https://chromewebstore.google.com/detail/unblur-image/lkebmhimhedohmgkomlnhgbcknocmpjo" class="btn btn--primary hero__cta" target="_blank" rel="noopener noreferrer">Try for Free</a>
+      </div>
+
+      <div class="hero__visual">
+        <div class="compare-card">
+          <div class="compare-card__img-wrap">
+            <img
+              src="assets/img_before_after_result.png"
+              alt="Before and after: low-resolution portrait vs AI-enhanced sharp result"
+              class="compare-card__img"
+              width="480"
+              height="510"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── STATS ───────────── -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stats__item">
+        <p class="stats__number">11 Sec</p>
+        <p class="stats__label">Average image processing time</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item">
+        <p class="stats__number">10K+</p>
+        <p class="stats__label">Active users every week</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__item">
+        <p class="stats__number">4.8</p>
+        <p class="stats__label">Average rating out of 5 on the Chrome Web Store</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── HOW IT WORKS ───────────── -->
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+
+      <div class="steps">
+        <div class="steps__layout">
+          <div class="steps__col">
+            <div class="step__card">
+              <div class="step__visual">
+                <div class="how-step__img-wrap">
+                  <img
+                    src="assets/img_HowItWorks__Upload.png"
+                    alt="Extension window: upload an image by drag and drop or paste"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="step__info">
+              <h3 class="step__title">Upload Your File</h3>
+              <p class="step__desc">Drag, drop, or paste your image — AI starts enhancing it instantly</p>
+            </div>
+          </div>
+
+          <div class="step__arrow" aria-hidden="true">→</div>
+
+          <div class="steps__col">
+            <div class="step__card">
+              <div class="step__visual">
+                <div class="how-step__img-wrap">
+                  <img
+                    src="assets/img_HowItWorks__Preview.png"
+                    alt="Before and after comparison with the quality slider"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="step__info">
+              <h3 class="step__title">Compare the Result</h3>
+              <p class="step__desc">See the difference instantly with our before/after slider</p>
+            </div>
+          </div>
+
+          <div class="step__arrow" aria-hidden="true">→</div>
+
+          <div class="steps__col">
+            <div class="step__card">
+              <div class="step__visual">
+                <div class="how-step__img-wrap">
+                  <img
+                    src="assets/img_HowItWorks__tools.png"
+                    alt="Upscale size options and download or upload new image"
+                    width="1000"
+                    height="1000"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="step__info">
+              <h3 class="step__title">Apply Settings</h3>
+              <p class="step__desc">Use the toolbar to select your upscaling size, then download your enhanced image</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── FEATURES ───────────── -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="section-title">Features</h2>
+
+      <div class="features__grid">
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <img src="assets/icon_Features__Comparison.png" alt="" width="28" height="28" />
+          </div>
+          <div>
+            <h3 class="feature-card__title">Before/After Comparison</h3>
+            <p class="feature-card__desc">Easily preview your image before and after enhancement</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <img src="assets/icon_Features__Speed.svg" alt="" width="28" height="28" />
+          </div>
+          <div>
+            <h3 class="feature-card__title">Speed</h3>
+            <p class="feature-card__desc">Average image processing takes just 11 seconds</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <img src="assets/icon_Features__Upscaling.png" alt="" width="28" height="28" />
+          </div>
+          <div>
+            <h3 class="feature-card__title">Upscaling Options</h3>
+            <p class="feature-card__desc">Choose to increase image size by 2×, 3×, or 4×</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">
+            <img src="assets/icon_Features__Quality.png" alt="" width="28" height="28" />
+          </div>
+          <div>
+            <h3 class="feature-card__title">Quality</h3>
+            <p class="feature-card__desc">Our algorithms remove compression artifacts and sharpen images, including faces, for clearer results</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── FOOTER ───────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Unblur Image</p>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <p class="footer__col-title">MENU</p>
+          <a href="#how" class="footer__link">How It Works</a>
+          <a href="#features" class="footer__link">Features</a>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">SUPPORT</p>
+          <a href="mailto:unblur.image.exten@gmail.com" class="footer__link">unblur.image.exten@gmail.com</a>
+          <a href="https://drive.google.com/file/d/1lkNglGgFzO12U6czwVTAFNjoMdc9NC-M/view?usp=drive_link" class="footer__link" target="_blank" rel="noopener noreferrer">Privacy policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ───────────── COOKIE BANNER ───────────── -->
+  <div id="cookie-popup" class="cookie-popup cookie-popup--hidden" role="dialog" aria-label="Cookie consent" aria-live="polite">
+    <div class="cookie-container">
+      <p class="cookie-text">
+        We use cookies to analyze our traffic and improve your experience.
+        Check out our <a href="https://drive.google.com/file/d/1lkNglGgFzO12U6czwVTAFNjoMdc9NC-M/view?usp=sharing" class="cookie-link" target="_blank" rel="noopener noreferrer">Cookie Policy</a> to learn more.
+      </p>
+      <div class="cookie-actions">
+        <button type="button" id="cookie-decline" class="btn-cookie btn-cookie--outline">Decline</button>
+        <button type="button" id="cookie-accept" class="btn-cookie btn-cookie--primary">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var popup = document.getElementById('cookie-popup');
+      var acceptBtn = document.getElementById('cookie-accept');
+      var declineBtn = document.getElementById('cookie-decline');
+      if (!popup || !acceptBtn || !declineBtn) return;
+
+      if (!localStorage.getItem('cookieConsent')) {
+        setTimeout(function () {
+          popup.classList.remove('cookie-popup--hidden');
+        }, 1000);
+      }
+
+      acceptBtn.addEventListener('click', function () {
+        localStorage.setItem('cookieConsent', 'accepted');
+        popup.classList.add('cookie-popup--hidden');
+      });
+
+      declineBtn.addEventListener('click', function () {
+        localStorage.setItem('cookieConsent', 'declined');
+        popup.classList.add('cookie-popup--hidden');
+      });
+    });
+  </script>
+
+</body>
 </html>
-
